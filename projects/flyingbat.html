@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bat - Sander Houdijk</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="text-blue-500 hover:text-blue-700 text-2xl font-bold">Sander Houdijk</a>
+            <ul class="flex space-x-4">
+                <li><a href="../index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="../about.html" class="text-gray-300 hover:text-white">About</a></li>
+                <li><a href="../projects.html" class="text-gray-300 hover:text-white">Projects</a></li>
+                <li><a href="../contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="flex justify-center">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../assets/projects/flyingbat/Gameplay.png" alt="Gameplay">
+                <div class="text">Gameplay</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../assets/projects/flyingbat/Start.png" alt="Start Screen">
+                <div class="text">Start Screen</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../assets/projects/flyingbat/flyingbat2.png" alt="Flying Bat">
+                <div class="text">Flying Bat</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="showcase-content bg-gray-800 p-4 w-1/2 overflow-y-auto">
+            <div id="flyingbat" class="container mx-auto px-4 py-16">
+                <h1 class="text-4xl font-bold text-white mb-4">Flying Bat</h1>
+                <p class="text-gray-300 mb-4">Flying Bat is a remake of the popular Flappy Bird game. In this game, you control a bat that must navigate through a series of obstacles. The game is built using JavaScript and provides a fun and challenging experience.</p>
+                
+                <h2 class="text-2xl font-semibold text-white mb-2">Features</h2>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>Simple and addictive gameplay</li>
+                    <li>High score tracking</li>
+                    <li>Responsive design</li>
+                    <li>Customizable bat and obstacles</li>
+                </ul>
+                
+                <h2 class="text-2xl font-semibold text-white mb-2">Technologies Used</h2>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                </ul>
+                
+                <h2 class="text-2xl font-semibold text-white mb-2">GitHub Repository</h2>
+                <p class="text-gray-300 mb-4">You can find the source code for Flying Bat on GitHub: <a href="https://github.com/sanderhd/flyingbat" class="text-blue-500 hover:text-blue-700">https://github.com/sanderhd/flyingbat</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../app.js"></script>
+</body>
+</html>
