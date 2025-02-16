@@ -14,6 +14,19 @@
     <title>Sander Houdijk</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn ease-in 1;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <style>
     .rain {
@@ -62,7 +75,7 @@
     .rain .drop:nth-child(19) { left: 95%; height: 20px; animation-duration: 2.1s; opacity: 0.6; } 
     .rain .drop:nth-child(20) { left: 12%; height: 22px; animation-duration: 1.2s; opacity: 0.7; } 
 </style>
-<body class="bg-gray-800">
+<body class="bg-gray-800 fade-in">
     <div class="rain">
         <div class="drop"></div>
         <div class="drop"></div>
