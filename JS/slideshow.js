@@ -1,7 +1,3 @@
-function downloadCv() {
-    window.open('assets/theflyingbat.png', '_blank');
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

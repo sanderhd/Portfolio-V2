@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
             position: relative;
             max-width: 100%;
             margin: auto;
+            margin-left: 20px;
         }
         .mySlides {
             display: none;
@@ -65,8 +66,8 @@
             <a href="../index.html" class="text-blue-500 hover:text-blue-700 text-2xl font-bold">Sander Houdijk</a>
             <ul class="flex space-x-4">
                 <li><a href="../index.html" class="text-gray-300 hover:text-white">Home</a></li>
-                <li><a href="../about.html" class="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="../projects.html" class="text-gray-300 hover:text-white">Projects</a></li>
+                <li><a href="../about.html" class="text-gray-300 hover:text-white">Over Mij</a></li>
+                <li><a href="../projects.html" class="text-gray-300 hover:text-white">Projecten</a></li>
                 <li><a href="../contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
         </div>
@@ -99,29 +100,34 @@
 
         <div class="showcase-content bg-gray-800 p-4 w-1/2 overflow-y-auto">
             <div id="flyingbat" class="container mx-auto px-4 py-16">
-                <h1 class="text-4xl font-bold text-white mb-4">Flying Bat</h1>
-                <p class="text-gray-300 mb-4">Flying Bat is a remake of the popular Flappy Bird game. In this game, you control a bat that must navigate through a series of obstacles. The game is built using JavaScript and provides a fun and challenging experience.</p>
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">Features</h2>
-                <ul class="list-disc list-inside text-gray-300 mb-4">
-                    <li>Simple and addictive gameplay</li>
-                    <li>High score tracking</li>
-                    <li>Responsive design</li>
-                    <li>Customizable bat and obstacles</li>
-                </ul>
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">Technologies Used</h2>
-                <ul class="list-disc list-inside text-gray-300 mb-4">
-                    <li>JavaScript</li>
-                    <li>HTML & CSS</li>
-                </ul>
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">GitHub Repository</h2>
-                <p class="text-gray-300 mb-4">You can find the source code for Flying Bat on GitHub: <a href="https://github.com/sanderhd/flyingbat" class="text-blue-500 hover:text-blue-700">https://github.com/sanderhd/flyingbat</a></p>
+            <h1 class="text-4xl font-bold text-white mb-4">Flying Bat</h1>
+            <p class="text-gray-300 mb-4">Flying Bat is een remake van het populaire spel Flappy Bird. In dit spel bestuur je een vleermuis die door een reeks obstakels moet navigeren. Het spel is gebouwd met JavaScript en biedt een leuke en uitdagende ervaring.</p>
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">Functies</h2>
+            <ul class="list-disc list-inside text-gray-300 mb-4">
+                <li>Eenvoudige en verslavende gameplay</li>
+                <li>Highscore bijhouden</li>
+                <li>Responsief ontwerp</li>
+                <li>Aanpasbare vleermuis en obstakels</li>
+            </ul>
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">Gebruikte technologieën</h2>
+            <ul class="list-disc list-inside text-gray-300 mb-4">
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+            </ul>
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">GitHub Repository</h2>
+            <p class="text-gray-300 mb-4">Je kunt de broncode van Flying Bat vinden op GitHub: <a href="https://github.com/sanderhd/flyingbat" class="text-blue-500 hover:text-blue-700">https://github.com/sanderhd/flyingbat</a></p>
             </div>
         </div>
     </div>
 
-    <script src="../app.js"></script>
+    <footer class="container mx-auto p-8 text-center text-gray-300 bg-gray-900">
+        <p>&copy; <span id="footer_year">Laden...</span> Sander Houdijk. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/slideshow.js"></script>
 </body>
 </html>

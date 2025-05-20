@@ -11,6 +11,7 @@
             position: relative;
             max-width: 100%;
             margin: auto;
+            margin-left: 20px;
         }
         .mySlides {
             display: none;
@@ -65,8 +66,8 @@
             <a href="../index.html" class="text-blue-500 hover:text-blue-700 text-2xl font-bold">Sander Houdijk</a>
             <ul class="flex space-x-4">
                 <li><a href="../index.html" class="text-gray-300 hover:text-white">Home</a></li>
-                <li><a href="../about.html" class="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="../projects.html" class="text-gray-300 hover:text-white">Projects</a></li>
+                <li><a href="../about.html" class="text-gray-300 hover:text-white">Over Mij</a></li>
+                <li><a href="../projects.html" class="text-gray-300 hover:text-white">Projecten</a></li>
                 <li><a href="../contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
         </div>
@@ -75,9 +76,27 @@
     <div class="flex justify-center">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="../assets/projects/react-blogposts/blog1.png" alt="Blog Post maken">
-                <div class="text">Blog Post Maken</div>
+                <div class="numbertext">1 / 4</div>
+                <img src="../assets/projects/react-blogposts/blog1.png" alt="Landings Pagina">
+                <div class="text">Landings Pagina</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../assets/projects/react-blogposts/blog2.png" alt="Blog Overzicht">
+                <div class="text">Blog Overzicht</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../assets/projects/react-blogposts/blog3.png" alt="Blog">
+                <div class="text">Blog + Comments</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../assets/projects/react-blogposts/blog4.png" alt="Dashboard">
+                <div class="text">Dashboard</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -87,34 +106,39 @@
 
         <div class="showcase-content bg-gray-800 p-4 w-1/2 overflow-y-auto">
             <div id="blogposts" class="container mx-auto px-4 py-16">
-                <h1 class="text-4xl font-bold text-white mb-4">Blog Posts</h1>
-                <p class="text-gray-300 mb-4">This Blog Post site is built using React. It allows users to create, edit, and delete blog posts. The site is designed to be responsive and user-friendly, providing a seamless experience for users on both desktop and mobile devices.</p>
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">Features</h2>
-                <ul class="list-disc list-inside text-gray-300 mb-4">
-                    <li>Create, edit, and delete blog posts</li>
-                    <li>Responsive design</li>
-                </ul>
+            <h1 class="text-4xl font-bold text-white mb-4">Blogposts</h1>
+            <p class="text-gray-300 mb-4">Deze blogpost-site is gebouwd met React. Gebruikers kunnen blogposts aanmaken, bewerken en verwijderen. De site is ontworpen om responsief en gebruiksvriendelijk te zijn, zodat gebruikers op zowel desktop als mobiele apparaten een prettige ervaring hebben.</p>
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">Functionaliteiten</h2>
+            <ul class="list-disc list-inside text-gray-300 mb-4">
+                <li>Aanmaken, bewerken en verwijderen van blogposts</li>
+                <li>Responsief ontwerp</li>
+            </ul>
 
-                <h2 class="text-2xl font-semibold text-white mb-2">Future Plans/Work in Progress</h3>
-                <ul class="list-disc list-inside text-gray-300 mb-4">
-                    <li>User authentication</li>
-                    <li>Commenting system</li>
-                </ul>
-                
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">Technologies Used</h2>
-                <ul class="list-disc list-inside text-gray-300 mb-4">
-                    <li>React</li>
-                    <li>Tailwind CSS</li>
-                </ul>
-                
-                <h2 class="text-2xl font-semibold text-white mb-2">GitHub Repository</h2>
-                <p class="text-gray-300 mb-4">You can find the source code for the Blog Post site on GitHub: <a href="https://github.com/sanderhd/React-BlogPosts" class="text-blue-500 hover:text-blue-700">https://github.com/sanderhd/React-BlogPosts</a></p>
+            <h2 class="text-2xl font-semibold text-white mb-2">Toekomstplannen / In Ontwikkeling</h2>
+            <ul class="list-disc list-inside text-gray-300 mb-4">
+                <li>Gebruikersauthenticatie</li>
+                <li>Reactiesysteem</li>
+            </ul>
+            
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">Gebruikte Technologieën</h2>
+            <ul class="list-disc list-inside text-gray-300 mb-4">
+                <li>React</li>
+                <li>Tailwind CSS</li>
+            </ul>
+            
+            <h2 class="text-2xl font-semibold text-white mb-2">GitHub Repository</h2>
+            <p class="text-gray-300 mb-4">Je kunt de broncode van de Blogpost-site vinden op GitHub: <a href="https://github.com/sanderhd/React-BlogPosts" class="text-blue-500 hover:text-blue-700">https://github.com/sanderhd/React-BlogPosts</a></p>
             </div>
         </div>
     </div>
 
-    <script src="../app.js"></script>
+    <footer class="container mx-auto p-8 text-center text-gray-300 bg-gray-900">
+        <p>&copy; <span id="footer_year">Laden...</span> Sander Houdijk. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/slideshow.js"></script>
 </body>
 </html>

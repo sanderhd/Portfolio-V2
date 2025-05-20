@@ -13,17 +13,36 @@
       <a href="index.html" class="text-blue-500 hover:text-blue-700 text-2xl font-bold">Sander Houdijk</a>
       <ul class="flex space-x-4">
         <li><a href="index.html" class="text-gray-300 text-blue-700">Home</a></li>
-        <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
-        <li><a href="projects.html" class="text-gray-300 hover:text-white">Projects</a></li>
+        <li><a href="about.html" class="text-gray-300 hover:text-white">Over Mij</a></li>
+        <li><a href="projects.html" class="text-gray-300 hover:text-white">Projecten</a></li>
         <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
       </ul>
     </div>
   </nav>
   <div>
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-white">Projects</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-white">Projecten</h2>
     
       <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+
+        <div class="group relative">
+          <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
+            <img src="assets/projects/apothecare/apothecare1.png" alt="Apothecare" class="object-cover w-full h-full">
+          </div>
+          <div class="mt-4 flex justify-between items-center">
+            <div>
+              <h3 class="text-sm text-gray-200">
+                <a href="projects/apothecare.html">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Apothecare
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">PHP</p>
+            </div>
+            <a href="projects/quizapp.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 flex items-center justify-center dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Info</a>
+          </div>
+        </div>
+
         <div class="group relative">
           <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
             <img src="assets/projects/quizapp/quizapp.png" alt="Quizz App" class="object-cover w-full h-full">
@@ -33,7 +52,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="projects/quizapp.html">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Quizz App
+                  Quiz App
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">PHP</p>
@@ -67,7 +86,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="projects/blogposts.html">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Blog Post Site
+                  Blog Posts
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">React</p>
@@ -84,7 +103,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="https://github.com/sanderhd/Sound-Analyzer">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Sound Analyzer
+                  Geluid Analyzer
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">P5JS</p>
@@ -101,7 +120,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="https://github.com/sanderhd/Number-Guess">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Guess The Number
+                  Raad het Getal
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">JS</p>
@@ -118,7 +137,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="https://github.com/sanderhd/QuizApp">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Simple Quizz
+                  Simpele Quiz
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">JS</p>
@@ -135,7 +154,7 @@
               <h3 class="text-sm text-gray-200">
                 <a href="https://github.com/sanderhd/Rekenmachine">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Calculator
+                  Rekenmachine
                 </a>
               </h3>
               <p class="mt-1 text-sm text-gray-500">JS</p>
@@ -145,6 +164,10 @@
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <footer class="container mx-auto p-8 text-center text-gray-300 bg-gray-900">
+        <p>&copy; <span id="footer_year">Laden...</span> Sander Houdijk. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="../JS/footer.js"></script>
 </body>
 </html>
